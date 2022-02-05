@@ -8,6 +8,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    display: flex;
+}
+
+header {
+    background-color: black;
+    max-width: 100%;
+    padding: 0 5%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
@@ -22,7 +34,7 @@ nav ul li {
     margin-top: 13px;
 }
 
-nav ul li a {
+ header nav ul li a {
 	margin: 30px;
 	color: white;
 	font-size: 20px;
@@ -30,10 +42,11 @@ nav ul li a {
     padding: 30px 10px;
 }
 
-main section div {
-    width: 100%;
-    padding: 0 20%;
+main section {
+    display: flex;
+    justify-content: center;
 }
+
 
 main button {
     background-color: white;
@@ -52,14 +65,30 @@ img {
     padding-top: 20px;
 }
 
-.header {
-    background-color: black;
+footer {
+    background-color: #f5f5f5;
+    color: #757575;
     max-width: 100%;
     padding: 0 5%;
     height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer div {
+    justify-content: space-between;
+    display: flex;
+    width: 1040px;
+}
+
+footer a {
+    color: gray;
+}
+
+footer nav ul li a {
+	margin: 10px;
+    padding: 30px 10px;
 }
 
 .header-container {
@@ -91,18 +120,18 @@ img {
 }
 
 .main-container {
-    max-width: 100%;
     border-bottom: 0.5px solid gray;
-}
-
-.text1 {
-    margin-top: 150px;
-    box-sizing: content-box;
 }
 
 .text-img {
     justify-content: space-between;
     display: flex;
+    width: 1040px;
+}
+
+.text1 {
+    margin-top: 150px;
+    box-sizing: content-box;
 }
 
 .texts {
@@ -130,4 +159,17 @@ img {
 
 .button2 {
     margin-left: 0;
+}
+
+.end-section {
+    flex: 1 1 auto;
+}
+
+.footer-container {
+    max-width: 1040px;
+    height: 92px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex: 1;
 }
