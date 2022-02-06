@@ -68,9 +68,22 @@ img {
     padding-top: 20px;
 }
 
-.end-div {
+main section * {
+    
+}
+
+main ul {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main ul li {
+    width: 30%;
+    background-color: gray;
+    height: 200px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -168,11 +181,19 @@ footer nav ul li a {
 
 .end-section {
     background-color: #fafafa;
+    display: flex;
 }
 
 .end-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 1040px;
+    padding: 96px 0px; 
+}
 
+.div-container {
+    margin-bottom: 42px;
 }
 
 .footer-container {
